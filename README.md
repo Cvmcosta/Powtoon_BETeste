@@ -1,5 +1,5 @@
 # Powtoon_BETeste
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  ![made-with-python](https://img.shields.io/badge/Made%20with-DjangoREST-ff1709.svg)
 ---
 ## About
 This repositorie is about BackEnd test. It Was developed with python 3.8 and Django==3.2.9.
