@@ -7,3 +7,7 @@ class IsOwner(permissions.BasePermission):
             return obj.owner == request.user
         return True
 
+class CanShare(permissions.BasePermission):
+    def has_permission(self, request, view):
+       return "share.share_powtoon" in request.user.get_user_permissions()
+      

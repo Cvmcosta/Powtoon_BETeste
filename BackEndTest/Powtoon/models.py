@@ -10,4 +10,3 @@ class Powtoon(models.Model):
     content = models.CharField(max_length=255)
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     connection = models.ManyToManyField(User, related_name = 'connection',blank=True)
-

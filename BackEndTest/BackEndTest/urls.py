@@ -16,7 +16,7 @@ Including another URLconf
 from rest_framework_simplejwt.views import TokenObtainPairView,TokenRefreshView
 from django.contrib import admin
 from django.urls import path,include
-from rest_framework_nested import routers
+from rest_framework import routers
 from Powtoon.api import viewsets as powtoonviewsets
 
 
