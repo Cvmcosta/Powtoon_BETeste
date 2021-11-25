@@ -13,16 +13,22 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from rest_framework_simplejwt.views import TokenObtainPairView,TokenRefreshView
 from django.contrib import admin
 from django.urls import path,include
-
-from rest_framework import routers
+from rest_framework_nested import routers
 from Powtoon.api import viewsets as powtoonviewsets
-route = routers.DefaultRouter()
 
+
+route = routers.DefaultRouter()
 route.register(r'powtoon',powtoonviewsets.PowtoonViewSet, basename ="Powtoon")
+route.register(r'shared',powtoonviewsets.SharedPowtoonViewSet, basename ="SharedPowtoon")
+route.register(r'share',powtoonviewsets.SharePowtoonViewSet, basename ="SharePowtoon")
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",include(route.urls))
+    path('token/', TokenObtainPairView.as_view()),
+    path('token/refresh/', TokenRefreshView.as_view()),
+    path(r'',include(route.urls)),
 ]
