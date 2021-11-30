@@ -1,6 +1,6 @@
 from rest_framework import viewsets,mixins
 from Powtoon import serializers
-from Share import models
+from Powtoon import models
 from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth.models import User
 from django.shortcuts import get_object_or_404
