@@ -76,7 +76,7 @@ http://localhost:8000/powtoon/{powtoonid}/
 
 5- [method = get] Get Shared powtoons with me
 ```bash
-http://localhost:8000/shared/
+http://localhost:8000/share/
 ```
 6- [method = post] share a powtoon with other user (you just can share if you are the owner or admin)
 ```bash
