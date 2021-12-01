@@ -5,7 +5,7 @@
 This repositorie is about BackEnd test. It Was developed with python 3.8 and Django==3.2.9.
 In the repositorie has requeriment.txt with all dependecies of project
 ## Data
-Inside folder has a file called alldata.json, this file is the fixture, just load to get all data about user, permission and groups
+Inside folder has a file called fixture.json, this file is the fixture, just load to get all data about user, permission and groups
 ## User, Permission and Groups
 When load the fixture will has,as following informations:
 
